@@ -2,7 +2,6 @@ const dns = require("dns");
 
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
-
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -14,11 +13,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
@@ -39,8 +34,8 @@ const startServer = async () => {
 
     console.log("MongoDB connected successfully");
 
-    app.listen(PORT, () => {
-      console.log(`Server running on http://localhost:${PORT}`);
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`Server running on port ${PORT}`);
     });
   } catch (error) {
     console.error("MongoDB connection failed:", error);
