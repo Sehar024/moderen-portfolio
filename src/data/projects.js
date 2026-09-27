@@ -69,7 +69,7 @@ export const projects = [
     tech: ["React", "AI", "Node.js"],
     github: "#",
     demo: "#",
-    image: "/projects/recipe-ai.png",
+    image: "/src/assets/recipe-ai.png",
   },
 
   {
@@ -81,7 +81,7 @@ export const projects = [
     tech: ["React", "Tailwind", "Three.js"],
     github: "#",
     demo: "#",
-    image: "/projects/portfolio.png",
+    image: "/src/assets/portfolio.png",
   },
 
   {
