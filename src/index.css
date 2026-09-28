@@ -39,10 +39,10 @@ body {
 
 .animated-gradient::before {
   content: "";
-  position: fixed;
+  position: relative;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 
   background:
     radial-gradient(
