@@ -12,7 +12,7 @@ import Contact from "./sections/Contact";
 
 export default function App() {
   return (
-    <div className="animated-gradient min-h-screen overflow-hidden text-white">
+    <div className="animated-gradient min-h-screen overflow-hidden">
 
       <ScrollProgress />
 

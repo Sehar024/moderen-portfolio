@@ -24,7 +24,7 @@ export default function Hero() {
       <HeroScene />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/35" />
+      <div className="hero-overlay absolute inset-0" />
 
       {/* Purple atmospheric glow */}
       <div className="pointer-events-none absolute left-[-200px] top-[20%] h-[500px] w-[500px] rounded-full bg-violet-700/20 blur-[160px]" />
@@ -68,7 +68,7 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <h1 className="text-6xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
+            <h1 className="text-white text-6xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
               Sehar
               <span className="block bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent">
                 Developer.
@@ -90,8 +90,7 @@ export default function Hero() {
                 {roles.map((role) => (
                   <div
                     key={role}
-                    className="flex h-10 items-center text-lg font-semibold tracking-widest text-gray-300"
-                  >
+                    className="hero-role flex h-10 items-center text-lg font-semibold tracking-widest text-gray-300">
                     <span className="mr-3 text-violet-500">
                       //
                     </span>
@@ -102,7 +101,7 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            <p className="mt-7 max-w-xl text-base leading-8 text-gray-400">
+            <p className="hero-description mt-7 max-w-xl text-base leading-8 text-gray-400">
               I create modern, responsive and interactive digital
               experiences using React, Node.js, JavaScript,
               Tailwind CSS and AI technologies.

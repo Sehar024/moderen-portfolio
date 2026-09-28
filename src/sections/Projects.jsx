@@ -38,7 +38,7 @@ export default function Projects() {
       className="
         relative
         overflow-hidden
-        bg-[#030316]
+        projects-section-bg
         px-6
         py-32
       "
@@ -251,7 +251,7 @@ export default function Projects() {
                   rounded-3xl
                   border
                   border-violet-500/30
-                  bg-[#070721]/80
+                  project-card-bg
                   backdrop-blur-xl
                   transition-all
                   duration-300
@@ -344,10 +344,7 @@ export default function Projects() {
                     className="
                       absolute
                       inset-0
-                      bg-gradient-to-t
-                      from-[#030316]
-                      via-black/20
-                      to-transparent
+                      project-image-overlay
                     "
                   />
 
@@ -660,20 +657,14 @@ export default function Projects() {
                     whileHover={{
                       x: 3,
                     }}
-                    className="
-                      text-2xl
-                      font-bold
-                      text-white
-                      transition-colors
-                      group-hover:text-violet-200
-                    "
+                    className="project-card-title text-2xl font-bold text-white transition-colors group-hover:text-violet-200"
                   >
                     {project.title}
                   </motion.h3>
 
                   {/* Description */}
 
-                  <p className="mt-3 max-w-xl leading-7 text-gray-400">
+                  <p className="project-card-description mt-3 max-w-xl leading-7 text-gray-400">
                     {project.description}
                   </p>
 
@@ -733,17 +724,7 @@ export default function Projects() {
                     whileHover={{
                       x: 4,
                     }}
-                    className="
-                      mt-7
-                      inline-flex
-                      items-center
-                      gap-3
-                      text-sm
-                      text-gray-300
-                      transition
-                      hover:text-white
-                    "
-                  >
+                    className="project-github-link mt-7 inline-flex items-center gap-3 text-sm text-gray-300 transition hover:text-white">
                     
 
                     <span className="font-medium">
