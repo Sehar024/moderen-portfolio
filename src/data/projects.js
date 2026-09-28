@@ -1,52 +1,6 @@
-/*export const projects = [
-  {
-    title: "CampusHub",
-    description:
-      "A complete campus management system for students and administrators.",
-    tech: ["React", "Node.js", "MongoDB"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Recipe AI",
-    description:
-      "An AI-powered recipe application designed to help users discover meals.",
-    tech: ["React", "AI", "Node.js"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Portfolio",
-    description:
-      "A modern 3D developer portfolio with animations and interactive UI.",
-    tech: ["React", "Tailwind", "Three.js"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Data Scraper",
-    description:
-      "A Python-based data extraction and automation project.",
-    tech: ["Python", "Automation", "API"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Project Five",
-    description: "Another modern web application.",
-    tech: ["React", "Node.js"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Project Six",
-    description: "An additional full-stack project.",
-    tech: ["JavaScript", "Express"],
-    github: "#",
-    demo: "#",
-  },
-];*/
-
+import portfolioImage from "../assets/portfolio.png";
+import recipeAiImage from "../assets/recipe-ai.png";
+import heroImage from "../assets/hero.png";
 export const projects = [
   {
     id: 1,
@@ -69,7 +23,7 @@ export const projects = [
     tech: ["React", "AI", "Node.js"],
     github: "#",
     demo: "#",
-    image: "/src/assets/recipe-ai.png",
+    image: recipeAiImage,
   },
 
   {
@@ -81,7 +35,7 @@ export const projects = [
     tech: ["React", "Tailwind", "Three.js"],
     github: "#",
     demo: "#",
-    image: "/src/assets/portfolio.png",
+    image: portfolioImage,
   },
 
   {

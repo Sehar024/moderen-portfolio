@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 
 import HeroScene from "../components3d/HeroScene";
+import cvFile from "../assets/Sehar_CV.pdf";
 
 const roles = [
   "WEB DEVELOPMENT",
@@ -161,8 +162,10 @@ export default function Hero() {
                   </span>
               </a>
               <a
-                  href="/Sehar_CV.pdf"
-                  download
+                  href={cvFile}
+                  download = "Sehar_CV.pdf"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   className="rounded-full border border-white/10 bg-white/[0.03] p-3 text-gray-400 transition hover:border-violet-500 hover:text-violet-400"
                 >
                 Download CV
