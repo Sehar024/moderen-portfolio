@@ -161,7 +161,7 @@ export default function Hero() {
                   </span>
               </a>
               <a
-                  href="/resume.pdf"
+                  href="/src/assets/Sehar-Qamar-Resume(QH).pdf"
                   download
                   className="rounded-full border border-white/10 bg-white/[0.03] p-3 text-gray-400 transition hover:border-violet-500 hover:text-violet-400"
                 >
